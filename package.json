@@ -1,0 +1,10 @@
+{
+    "name": "planning-poker",
+    "version" : "0.0.1",
+    "dependencies": {
+        "underscore": "*",
+        "express": "*",
+        "socket.io": "*",
+        "mdns": "*"
+    }
+}

@@ -1,0 +1,75 @@
+#play-area {
+    width: 1080;
+    height: 800;
+    display: block;
+}
+
+.container {
+    width: 450px; height: 660px;
+    -webkit-perspective: 1000;
+    padding-right: 10px;
+}
+
+.card {
+    width: 450px; height: 660px;
+    border: 8px solid #fff;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+}
+    .flip .card {
+        -webkit-transform: rotateY(180deg);
+    }
+
+.face {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+
+.poker {
+    float: left;
+}
+    .poker .front {
+        width: 450px; height: 660px;
+        background: url(/images/back_card@2x.png);
+    }
+    .poker .back {
+        width: 450px; height: 660px;
+        -webkit-transform: rotateY(180deg);
+
+    }
+
+.card-1 {
+    background: url(/images/card--1@2x.png);
+}
+.card0 {
+    background: url(/images/card-0@2x.png);
+}
+.card1 {
+    background: url(/images/card-1@2x.png);
+}
+.card2 {
+    background: url(/images/card-2@2x.png);
+}
+.card3 {
+    background: url(/images/card-3@2x.png);
+}
+.card5 {
+    background: url(/images/card-5@2x.png);
+}
+.card8 {
+    background: url(/images/card-8@2x.png);
+}
+.card13 {
+    background: url(/images/card-13@2x.png);
+}
+.card999 {
+    background: url(/images/card-999@2x.png);
+}
+
+.flip .front {
+    z-index: 0;
+}
+
+.front {
+    z-index: 10;
+}

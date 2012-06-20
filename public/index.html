@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Planning Poker</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+  <div id="play-area">
+  </div>
+  <script type="text/x-handlebars" data-template-name="playerView">
+    <div {{bindAttr class="containerClass"}}>
+    <h3>{{player.name}}</h3>
+      <div class="card">
+        <div class="face front">
+        </div>
+        <div {{bindAttr class="cardClass"}}>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script src="js/ember-0.9.8.1.js"></script>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
